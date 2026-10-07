@@ -1,3 +1,4 @@
+// added default date if no date is provided in the Article component
 function Article({ title, date = "January 1, 1970", preview, minutes }) {
   return (
     <article>
