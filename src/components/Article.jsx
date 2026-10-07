@@ -1,5 +1,13 @@
-function Article() {
-    return <article>Article</article>
+function Article({ title, date, preview, minutes }) {
+  return (
+    <article>
+      <h3>{title}</h3>
+      <small>
+        {date} • {minutes} min read
+      </small>
+      <p>{preview}</p>
+    </article>
+  );
 }
 
-export default Article
+export default Article;
